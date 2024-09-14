@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orraha's Portfolio</title>
+    <!-- Подключение шрифта Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Стили CSS -->
+    <style>
+        /* Ваш CSS код */
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: #000;
+            background-color: #222; /* Устанавливаем общий фон для страницы */
+        }
+
+        /* Секция вверху с логотипом и контактами */
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+        .top-bar .logo {
+            font-size: 24px;
+        }
+        .top-bar .logo .orr {
+            color: red;
+        }
+        .top-bar .logo .aha {
+            color: white;
+        }
+        .top-bar .contact-info {
+            color: white;
+            font-size: 18px;
+        }
+
+        /* Общие стили для блоков */
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* Фоны для блоков */
+        #about {
+            background: url('background-about.jpg') no-repeat center center;
+            background-size: cover;
+            color: #fff; /* Белый цвет текста */
+            height: 10vh; /* Уменьшаем высоту первого блока */
+        }
+
+        #why-hire {
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 40px 20px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        #skills {
+            background-color: #222;
+            color: white;
+        }
+
+        /* Блок 1 - О себе */
+        #about h1 {
+            font-size: 28px;
+            color: #fff;
+        }
+        #about p {
+            font-size: 18px;
+            margin-top: 15px;
+            color: #fff;
+        }
+
+        /* Блок 2 - Почему нанять меня */
+        #why-hire .image-box {
+            width: 200px;
+            height: 200px;
+            background-image: url('box.jpg'); /* Вставляем ваше изображение */
+            background-size: cover;
+            background-position: center;
+            border: 2px solid #fff;
+        }
+
+        #why-hire .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .header-background {
+            background-color: #444; /* Темно-серый фон для заголовка */
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .header-background h2 {
+            font-size: 26px;
+            margin: 0;
+        }
+
+        #why-hire .details {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        /* Блок 3 - Мои навыки */
+        #skills h2 {
+            font-size: 26px;
+            margin-bottom: 30px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        /* Стили для навыков */
+        .skill-bar {
+            width: 80%;
+        }
+        .skill-bar .skill-content {
+            flex: 1;
+        }
+        .skill-bar .skill-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .skill-bar .skill-progress {
+            height: 10px;
+            background-color: #555;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .skill-bar .skill-progress div {
+            height: 100%;
+            background-color: red;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Верхняя часть с логотипом и контактами -->
+<div class="top-bar">
+    <div class="logo">
+        <span class="orr">orr</span><span class="aha">aha</span>
+    </div>
+    <div class="contact-info">
+        <a href="https://discord.com/users/689502458526826529" target="_blank" style="color: white; text-decoration: none; margin-right: 10px;">Discord</a> |
+        <a href="https://t.me/hackurmoom" target="_blank" style="color: white; text-decoration: none;">Telegram</a>
+    </div>
+</div>
+
+
+<!-- Блок 1: О себе -->
+<section id="about">
+    <h1>I'm Orraha Yasu</h1>
+    <p>I'm a web developer from Estonia, passionate about creating websites and learning software development.</p>
+</section>
+
+<!-- Блок 2: Почему нанять меня -->
+<section id="why-hire">
+    <div class="image-box"></div>
+    <div class="content">
+        <div class="header-background">
+            <h2>Why hire me for your next project?</h2>
+        </div>
+        <div class="details">
+            <p><strong>Name:</strong> Orraha</p>
+            <p><strong>Birthday:</strong> 30.01.2005</p>
+            <p><strong>Location:</strong> Tallinn, Estonia</p>
+            <p><strong>Email:</strong> orraha@outlook.com</p>
+        </div>
+    </div>
+</section>
+
+<!-- Блок 3: Мои навыки -->
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+        <!-- Навык 1 -->
+        <div class="skill-bar">
+            <div class="skill-content">
+                <div class="skill-header">
+                    <span class="skill-name">UI/UX</span>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-progress">
+                    <div style="width: 70%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Навык 2 -->
+        <div class="skill-bar">
+            <div class="skill-content">
+                <div class="skill-header">
+                    <span class="skill-name">Development</span>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-progress">
+                    <div style="width: 85%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Навык 3 -->
+        <div class="skill-bar">
+            <div class="skill-content">
+                <div class="skill-header">
+                    <span class="skill-name">Web Design</span>
+                    <span class="skill-percent">60%</span>
+                </div>
+                <div class="skill-progress">
+                    <div style="width: 60%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
